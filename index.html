@@ -4,8 +4,354 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- === Google Fonts === -->  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- === CSS === -->  
+    <link href="./boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+<!-- === Header === -->  
+
+    <header id="header">
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a class ="nav-link scrollto active" href="#">Home</a></li>
+                <li><a class ="nav-link scrollto" href="#about">About</a></li>
+                <li><a class ="nav-link scrollto" href="#education">Education</a></li>
+                <li><a class ="nav-link scrollto" href="#experience">Experience</a></li>
+                <li><a class ="nav-link scrollto" href="#contact">Contact</a></li>
+            </ul>
+            <!-- Mobile version -->  
+            <i class="mobile-nav-toggle"></i>
+        </nav>
+    </header>
+
+<!-- === Header End === -->  
+
+<!-- === Hero Section === --> 
+    <section id="hero">
+        <div class="hero-container">
+            <h1>Natalia Sugrobova</h1>
+            <h2>I'm a linguist and translator</h2>
+            <!-- Link to About Me Section --> 
+            <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
+        </div>
+    </section>
+
+<!-- === Hero Section End === --> 
+
+<main id="main">
+
+    <!-- === About Me Section === -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <span>About Me</span>
+                <h2>ABOUT ME</h2>
+                <p>Text about me</p>
+            </div>
+            <div class="inner_container">
+                <div class="left_column_image"></div>
+                <div class="right-column_about">
+                    <div class="aboutme_content">
+                        <!-- Right Column with personal information -->
+                        <div class="perso">
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>Natalia Sugrobova</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Paris, France</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="perso">
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>natalyasugrobova@gmail.com</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+33782419082</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>LinkedIn:</strong> <span></span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Linguistic Competences -->
+
+                    <div class="ling_competences">
+                        <div class="lang rus">
+                            <div class="lang_box">
+                                <div class="lang_icon">
+                                    <img id="l_icon" src="./icons_langs/russia.png" alt="Russian flag">
+                                </div>
+                                <div>
+                                    <p>Первая проблема - если мы используем svg код, то сам код становится достаточно большим так как сама иконка может быть очень сложной по цветам и количеству вектора внутри.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lang eng">
+                            <div class="lang_box">
+                                <div class="lang_icon">
+                                    <img id="l_icon" src="./icons_langs/united-kingdom.png" alt="British flag">
+                                </div>
+                                <div class="lang_text">
+                                    <p>Первая проблема - если мы используем svg код, то сам код становится достаточно большим так как сама иконка может быть очень сложной по цветам и количеству вектора внутри.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lang fr">
+                            <div class="lang_box">
+                                <div class="lang_icon">
+                                    <img id="l_icon" src="./icons_langs/france.png" alt="French flag">
+                                </div>
+                                <div>
+                                    <p>Первая проблема - если мы используем svg код, то сам код становится достаточно большим так как сама иконка</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lang es">
+                            <div class="lang_box">
+                                <div class="lang_icon">
+                                    <div>
+                                        <img id="l_icon" src="./icons_langs/spain.png" alt="Spanish flag">
+                                    </div>
+                                    <div class="lang_text">
+                                        <p>Первая проблема - если мы используем svg код, то сам код становится достаточно большим так как сама иконка может быть очень сложной по цветам и количеству вектора внутри.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Competences -->
+
+                    <div class="technical_competences">
+                        <div class="progress">
+                          <span class="skill">CAT Tools<i class="val">100%</i></span>
+                          <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+          
+                        <div class="progress">
+                          <span class="skill">MT and PE<i class="val">90%</i></span>
+                          <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+          
+                        <div class="progress">
+                          <span class="skill">Python for NLP<i class="val">75%</i></span>
+                          <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+ 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- === End About Me Section === -->
+
+
+    <!-- === Education Section === -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-title">
+                <span>Education</span>
+                <h2>EDUCATION</h2>
+            </div>
+            <div class="inner_container">
+                <div class="left-column">
+                    <h3 class="e_item">DesCodeuses</h3>
+                    <div class="resume_item">
+                        <h4>2024</h4>
+                        <p><em>Paris, France</em></p>
+                        <p>Description of the course</p>
+                    </div>
+                    <h3 class="e_item">Master of Arts in Technologies for Translation and Interpreting</h3>
+                    <div class="resume_item">
+                        <h4>2022 – 2023</h4>
+                        <p><em>New Bulgarian University, Sofia, Bulgaria</em></p>
+                        <p>Description of the education</p>
+                    </div>
+            
+                </div>
+
+                <div class="right-column">
+                    <h3 class="e_item">Master of Arts in Technologies for Translation and Interpreting</h3>
+                    <div class="resume_item">
+                        <h4>2021 – 2022</h4>
+                        <p><em>Ghent University, Ghent, Belgium</em></p>
+                        <p>Description of the education</p>
+                    </div>
+
+                    <h3 class="e_item">Specialist in Linguistics, Translation and Interpreting</h3>
+                    <div class="resume_item">
+                        <h4>2010 – 2015</h4>
+                        <p><em>Siberian Federal University, Krasnoyarsk, Russia</em></p>
+                        <p>Description of the education</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- === End Education Section === -->
+
+
+    <!-- === Experience Section === -->
+     
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-title">
+                <span>Experience</span>
+                <h2>EXPERIENCE</h2>
+            </div>
+            <div class="inner_container">
+                <div class="left-column">
+                    <h3 class="e_item">Freelance AI Quality Control Specialist</h3>
+                    <div class="resume_item">
+                        <h4>2023 – 2024</h4>
+                        <p><em>Paris, France</em></p>
+                        <ul>
+                            <li>I did this</li>
+                            <li>And that</li>
+                            <li>And also that</li>
+                        </ul>
+                    </div>
+                    <h3 class="e_item">Freelance Senior Editor for Russian language</h3>
+                    <div class="resume_item">
+                        <h4>2022 – 2023</h4>
+                        <p><em>Unbabel, Portugal</em></p>
+                        <ul>
+                            <li>I did this</li>
+                            <li>And that</li>
+                            <li>And also that</li>
+                        </ul>
+                    </div>
+            
+                </div>
+
+                <div class="right-column">
+                    <h3 class="e_item">Translator and labeling specialist</h3>
+                    <div class="resume_item">
+                        <h4>2018 – 2022</h4>
+                        <p><em>Abbott Laboratories, Moscow, Russia</em></p>
+                        <ul>
+                            <li>I did this</li>
+                            <li>And that</li>
+                            <li>And also that</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="e_item">Freelance translator and English tutor</h3>
+                    <div class="resume _item">
+                        <h4>2015 – 2021</h4>
+                        <p><em>Freelance, Krasnoyarsk and Moscow, Russia</em></p>
+                        <ul>
+                            <li>I did this</li>
+                            <li>And that</li>
+                            <li>And also that</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- === End Experience Section === -->
+
+    <!-- === Contact Section === -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <span>Contact Me</span>
+                <h2>Contact Me</h2>
+              </div>
+            <div class="inner_container">
+                <div class="left-column">
+                    <div class="left_container">
+                        <div class="info_box">
+                            <i class="bx bx-share-alt"></i>
+                            <h3>Social Media</h3>
+                            <div class="social-links">
+                                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="skype"><i class="bi bi-skype"></i></a>
+                            </div>
+                        </div>
+                        <div class=" info_box">
+                            <i class="bx bx-envelope"></i>
+                            <h3>Email Me</h3>
+                            <p>natalyasugrobova@gmail.com</p>
+                        </div>
+                        <div class="info_box">
+                            <i class="bx bx-phone-call"></i>
+                            <h3>Call Me</h3>
+                            <p>+79856353755</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-column">
+                    <form class="email-form">
+                        <div class="row">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group block">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                        </div>
+
+                        <div class="form-group block">
+                            <textarea class="form-control" name="message" rows="19" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- === End Contact Section === -->
+</main>
+
+<!-- === Footer === -->
+
+<footer id="footer" class="footer">
+    <div class="container_footer">
+        <h3>Natalia Sugrobova</h3>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/natalia-sugrobova/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://www.facebook.com/natalie.sugrobova" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.instagram.com/natalya_sugrobova/" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="https://join.skype.com/invite/o9PdQsOEvpyH" class="skype"><i class="bx bxl-skype"></i></a>
+        </div>
+    </div>
+</footer>
+<!-- === End Footer === -->
+
+<!-- JS script --> 
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
 </body>
 </html>
