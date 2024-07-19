@@ -1,0 +1,72 @@
+    <div class="parent">
+        <div class="enfant n1">
+            <h1 class="vertical">Heading</h1>
+            <p class="vertical">Some text</p>
+            <a href="" class="vertical">Link</a>
+        </div>
+        <div class="enfant n2">
+        </div>
+    </div>
+
+    <div class="parent">
+        <div class="enfant n3"></div>
+        <div class="enfant n4">
+            <h1>Heading</h1>
+            <p>Some text</p>
+            <a href="">Link</a>
+        </div>
+    </div>
+
+    <div class="parent">
+        <div class="enfant n5"></div>
+        <div class="enfant n6"></div>
+    </div>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    display: flex;
+    width: 100%;
+}
+
+.enfant {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 50vh;
+    border: solid 5px;
+    width: 50%;
+    font-size: 16px;
+}
+
+.n1 {
+    background-color:beige;
+    flex-direction: column;
+}
+
+.n2 {
+    background-image: url(https://shop-cdn1-2.vigbo.tech/shops/2544/products/16486697/images/3-9f0ed407d8ba2537f38b8b2d9765ccdb.jpg);
+    background-size: 100% 100%;
+}
+
+.n3 {
+    background-color:black;
+}
+
+.n4 {
+    background-color:bisque;
+    flex-direction: column;
+}
+
+.n5 {
+    background-color:pink;
+}
+
+.n6 {
+    background-color:burlywood;
+}

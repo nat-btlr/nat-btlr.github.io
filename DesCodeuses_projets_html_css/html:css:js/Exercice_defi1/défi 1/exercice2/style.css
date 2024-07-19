@@ -1,0 +1,12 @@
+body {
+    background-color:bisque;
+    color: #854a49;
+    text-align: center;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    text-align: justify;
+}

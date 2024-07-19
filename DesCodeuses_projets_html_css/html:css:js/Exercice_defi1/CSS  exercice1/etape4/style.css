@@ -1,0 +1,41 @@
+body {
+    font-family: 'Jost';
+    background-color: lightgrey;
+}
+
+div {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+#layer1 {
+    background-color: #FF1B00;
+}
+
+#layer2 {
+    background-color: #0017FF;
+}
+
+#layer3 {
+    background-color: #FFF700;
+}
+
+#layer4 {
+    background-color: #FF00FB;
+}
+
+.layer {
+    color:white;
+    text-align:center;
+    padding: 50px;
+}
+
+#cake {
+    width:600px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}

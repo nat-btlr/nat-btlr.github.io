@@ -1,0 +1,21 @@
+div {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#layer1 {
+    color: #FF1B00;
+}
+
+#layer2 {
+    color: #0017FF;
+}
+
+#layer3 {
+    color: #FFF700;
+}
+
+#layer4 {
+    color: #FF00FB;
+}

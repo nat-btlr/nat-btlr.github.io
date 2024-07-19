@@ -1,0 +1,23 @@
+.animation1 {
+    width: 200px;
+    height: 200px;
+    background-color: indigo;
+    margin: 300px auto;
+    padding: 50px;
+    animation: animation 10s linear 2s infinite;
+}
+
+.animation2 {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    margin: auto;
+}
+
+
+@keyframes animation {
+    0% {background-color: indigo;
+        transform: scale(1.5) rotate(-360deg)}
+    50% {background-color: darkblue;}
+    100% {background-color: darkred;}
+}

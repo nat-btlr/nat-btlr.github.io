@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider {
+    overflow: hidden;
+    height: 400px;
+    width: 900px;
+}
+
+.slider-content {
+    height: 400px;
+    width: 2710px;
+    animation: slider 10s linear alternate infinite;
+    position: relative;
+}
+
+@keyframes slider {
+    0% {left: 0px;
+    }
+    20% {left: 0px;
+    }
+    25% {left: -900px;
+    }
+    70% {left: -900px;
+    }
+    75% {left: -1800px;
+    }
+    100% {left: -1800px;
+    }
+}
