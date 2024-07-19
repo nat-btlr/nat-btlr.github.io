@@ -18,7 +18,7 @@ h6 {
 body {
     font-family: "Open Sans", sans-serif;
     color: #444444;
-  }
+}
 
 section {
     padding: 60px 0;
@@ -28,7 +28,7 @@ section {
     text-align: center;
     padding: 30px 0;
     position: relative;
-  }
+}
 
   .section-title h2 {
     font-size: 32px;
@@ -39,9 +39,9 @@ section {
     color: #3b434a;
     position: relative;
     z-index: 2;
-  }
+}
 
-  .section-title span {
+.section-title span {
     position: absolute;
     top: 30px;
     color: #eef0f2;
@@ -52,13 +52,13 @@ section {
     font-size: 52px;
     text-transform: uppercase;
     line-height: 0;
-  }
+}
 
-  .section-title p {
+.section-title p {
     margin-bottom: 0;
     position: relative;
     z-index: 2;
-  }
+}
 
 /* ---Header--- */
 
@@ -402,37 +402,46 @@ to change the background of the header
     text-align: center;
     box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
     padding: 20px 0 30px 0;
-  }
+}
+
+.info_box_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#small {
+    width: 40%;
+}
   
-  .contact .info_box i.bx {
+.contact .info_box i.bx {
     font-size: 24px;
     color: #ffb727;
     border-radius: 50%;
     padding: 15px;
     background: #fff6e4;
-  }
+}
   
-  .contact .info_box h3 {
+.contact .info_box h3 {
     font-size: 20px;
     color: #777777;
     font-weight: 700;
     margin: 10px 0;
-  }
+}
   
-  .contact .info_box p {
+.contact .info_box p {
     padding: 0;
     line-height: 24px;
     font-size: 14px;
     margin-bottom: 0;
-  }
+}
   
-  .contact .social-links {
+.contact .social-links {
     margin-top: 15px;
     display: flex;
     justify-content: center;
-  }
+}
   
-  .contact .social-links a {
+.contact .social-links a {
     font-size: 18px;
     display: inline-block;
     color: #687683;
@@ -442,56 +451,52 @@ to change the background of the header
     padding: 14px;
     border-radius: 50px;
     border: 1px solid #dde1e4;
-  }
+}
   
-  .contact .social-links a:hover {
+.contact .social-links a:hover {
     color: #fff;
     border-color: #ffb727;
     background: #ffb727;
-  }
-  /* End Left Column */
+}
+/* End Left Column */
  
-  /* Right Column */
-  .row {
+/* Right Column */
+
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
-  }
-
-.line {
-    width:50%;
-}
-
-.form-control {
-    width: 100%;
-    margin: 8px 0;
 }
 
 .email-form {
     box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
     padding: 27px;
 }
-.email-form input, .email-form text {
+
+.line {
+    width: 48%;
+}
+
+.form-control {
+    width: 100%;
+    margin: 8px 0;
+    border: 0.3mm solid rgba(214, 215, 216, 0.6);
+} 
+
+.email-form input, .email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.email-form input::focus, .email-form text::focus {
-  background-color: #ffb727;
-}
-
-.contact .email-form input {
+.email-form input, .form-group textarea {
   padding: 10px 15px;
+  font-family: "Open Sans", sans-serif;
 }
 
-.contact .php-email-form textarea {
-  padding: 12px 15px;
-}
-
-.contact .email-form button[type=submit] {
+.email-form button[type=submit] {
   background: #ffb727;
   border: 0;
   padding: 10px 24px;
@@ -500,12 +505,8 @@ to change the background of the header
   border-radius: 5px;
 }
 
-.contact .email-form button[type=submit]:hover {
+.email-form button[type=submit]:hover {
   background: #ffc85a;
-}
-
-.form-control {
-    border: 0.3mm solid rgba(214, 215, 216, 0.6);
 }
  /* End Right Column */
 
@@ -522,9 +523,9 @@ to change the background of the header
     text-align: center;
     padding: 80px 0;
     position: relative;
-  }
+}
   
-  #footer::before {
+#footer::before {
     content: "";
     position: absolute;
     left: 0;
@@ -532,13 +533,13 @@ to change the background of the header
     top: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.6);
-  }
+}
   
-  #footer .container_footer {
+#footer .container_footer {
     position: relative;
-  }
+}
   
-  #footer h3 {
+#footer h3 {
     font-size: 36px;
     font-weight: 700;
     color: #fff;
@@ -546,13 +547,13 @@ to change the background of the header
     font-family: "Satisfy", serif;
     padding: 0;
     margin: 0 0 15px 0;
-  }
+}
 
-  #footer .social-links {
+#footer .social-links {
     margin: 0 0 40px 0;
-  }
+}
   
-  #footer .social-links a {
+#footer .social-links a {
     font-size: 18px;
     display: inline-block;
     background: #ffb727;
@@ -565,12 +566,12 @@ to change the background of the header
     width: 36px;
     height: 36px;
     transition: 0.3s;
-  }
+}
   
-  #footer .social-links a:hover {
+#footer .social-links a:hover {
     background: #f3a200;
     color: #fff;
     text-decoration: none;
-  }
+}
 
-  /* ---End Footer--- */
+/* ---End Footer--- */
