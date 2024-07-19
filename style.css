@@ -20,6 +20,10 @@ body {
     color: #444444;
 }
 
+.container {
+    width: 100%;
+}
+
 section {
     padding: 60px 0;
 }
@@ -112,7 +116,7 @@ to change the background of the header
 
 .navbar a:hover,
 .navbar .active {
-  color: #ffb727;
+  color: #5d7e2d;
 }
 
 /* ---Hero--- */
@@ -151,7 +155,7 @@ to change the background of the header
 #hero h2 {
     color: #eee;
     margin-bottom: 50px;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -178,8 +182,46 @@ to change the background of the header
   }
 
   #hero .btn-scroll:hover {
-    color: #ffb727;
+    color: #5d7e2d;
   }
+
+  @media (min-width: 1024px) {
+    #hero {
+      background-attachment: fixed;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    #hero h1 {
+      font-size: 40px;
+    }
+  
+    #hero h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+/* End Desktop Navigation */
+
+/* Mobile Navigation */
+
+.mobile-nav-toggle {
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: 0.5s;
+}
+  
+@media (max-width: 991px) {
+    .mobile-nav-toggle {
+      display: block;
+    }
+    .navbar ul {
+        display: none;
+      }
+}
 
 /* ---About Me--- */
 
@@ -187,15 +229,13 @@ to change the background of the header
     display: flex;
     justify-content: stretch;
     flex-wrap: wrap;
-    margin: 0 2rem;
-
 }
 
 .left_column_image {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    background: url(./Template/Laura/assets/img/me.jpg) center center no-repeat;
+    background: url(./img/photo_portfolio.jpg) center center no-repeat;
     background-size: cover;
     min-height: 500px;
     width: 33%;
@@ -239,7 +279,7 @@ to change the background of the header
   .about .aboutme_content ul li i {
     font-size: 16px;
     margin-right: 5px;
-    color: #ffb727;
+    color: #5d7e2d;
     line-height: 0;
   }
 
@@ -278,6 +318,12 @@ to change the background of the header
     width: 50px;
     height: 50px;
     padding: 11px 11px;
+}
+
+.lang_description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .lang_box p {
@@ -323,9 +369,26 @@ to change the background of the header
   
   .about .technical_competences .progress-bar {
     width: 1px;
-    height: 10px;
-    transition: 0.9s;
-    background-color: #ffb727;
+    height: 20px;
+    background-color: #5d7e2d;
+  }
+
+#n_1 {
+    width: 100%;
+    height: 20px;
+    transition: width 0.9s ease-in-out;
+  }
+
+#n_2 {
+    width: 90%;
+    height: 20px;
+    transition: width 0.9s ease-in-out;
+  }
+
+  #n_3 {
+    width: 75%;
+    height: 20px;
+    transition: width 0.9s ease-in-out;
   }
 
 /* ---End Technical Competences--- */
@@ -348,32 +411,33 @@ to change the background of the header
 }
 
 .resume_item {
-    padding: 0 0 20px 20px;
+    padding: 0 0 0 20px;
     margin-top: -2px;
     border-left: 2px solid #82909c;
     position: relative;
   }
 
-  .e_item {
+.e_item {
     line-height: 18px;
-    font-size: 16px;
+    font-size: 20px;
+    letter-spacing: 2px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #ffb727;
-    margin-bottom: 8px;
+    color: #5d7e2d;
+    margin-bottom: 5px;
     margin-top: 12px;
-  }
+}
 
-  .resume_item h4 {
+.resume_item h4 {
     font-size: 16px;
     background: #eef0f2;
     padding: 5px 15px;
     display: inline-block;
     font-weight: 600;
-    margin-bottom: 10px;
-  }
+    margin: 10px 0;
+}
 
-  .resume_item::before {
+.resume_item::before {
     content: "";
     position: absolute;
     width: 16px;
@@ -383,14 +447,23 @@ to change the background of the header
     top: 0;
     background: #fff;
     border: 2px solid #82909c;
-  }
+}
 
+text-justify { 
+    text-align: justify;
+   }
 
 /* ---End Education--- */
 
 /* ---Experience--- */
 
-
+.resume-item ul {
+    padding-left: 20px;
+}
+  
+.resume-item ul li {
+    padding-bottom: 10px;
+}
 
 /* ---End Experience--- */
 
@@ -407,15 +480,18 @@ to change the background of the header
 .info_box_container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #small {
-    width: 40%;
+    width: 48%;
+    padding: 10px 10px;
+    margin-top: 15px;
 }
   
 .contact .info_box i.bx {
     font-size: 24px;
-    color: #ffb727;
+    color: #5d7e2d;
     border-radius: 50%;
     padding: 15px;
     background: #fff6e4;
@@ -455,8 +531,8 @@ to change the background of the header
   
 .contact .social-links a:hover {
     color: #fff;
-    border-color: #ffb727;
-    background: #ffb727;
+    border-color: #5d7e2d;
+    background: #5d7e2d;
 }
 /* End Left Column */
  
@@ -477,6 +553,7 @@ to change the background of the header
 
 .line {
     width: 48%;
+
 }
 
 .form-control {
@@ -497,7 +574,7 @@ to change the background of the header
 }
 
 .email-form button[type=submit] {
-  background: #ffb727;
+  background: #5d7e2d;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -516,7 +593,7 @@ to change the background of the header
 /* ---Footer--- */
 
 #footer {
-    background: url("./Template/Laura/assets/img/footer-bg.jpg") top center no-repeat;
+    background: url("./img/hero-test.jpg") center no-repeat;
     background-size: cover;
     color: #fff;
     font-size: 14px;
@@ -556,7 +633,7 @@ to change the background of the header
 #footer .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: #ffb727;
+    background: #5d7e2d;
     color: #fff;
     line-height: 1;
     padding: 8px 0;

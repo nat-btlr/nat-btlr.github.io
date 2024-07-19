@@ -36,6 +36,7 @@
                 <li><a class ="nav-link scrollto" href="#experience">Experience</a></li>
                 <li><a class ="nav-link scrollto" href="#contact">Contact</a></li>
             </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
             <!-- Mobile version -->  
             <i class="mobile-nav-toggle"></i>
         </nav>
@@ -47,7 +48,7 @@
     <section id="hero">
         <div class="hero-container">
             <h1>Natalia Sugrobova</h1>
-            <h2>I'm a linguist and translator</h2>
+            <h2>I'm a linguist and a translator</h2>
             <!-- Link to About Me Section --> 
             <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
         </div>
@@ -63,7 +64,7 @@
             <div class="section-title">
                 <span>About Me</span>
                 <h2>ABOUT ME</h2>
-                <p>Text about me</p>
+                <p>Linguist with 5+ years' experience in written translation passionate about tech and NLP.</p>
             </div>
             <div class="inner_container">
                 <div class="left_column_image"></div>
@@ -81,8 +82,8 @@
                         <div class="perso">
                             <ul>
                                 <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>natalyasugrobova@gmail.com</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+33782419082</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>LinkedIn:</strong> <span></span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Phone (fr):</strong> <span>+33782419082</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Phone (ru):</strong> <span>+79856353755</span></li>
                             </ul>
                         </div>
                     </div>
@@ -95,8 +96,9 @@
                                 <div class="lang_icon">
                                     <img id="l_icon" src="./icons_langs/russia.png" alt="Russian flag">
                                 </div>
-                                <div>
-                                    <p>Первая проблема - если мы используем svg код, то сам код становится достаточно большим так как сама иконка может быть очень сложной по цветам и количеству вектора внутри.</p>
+                                <div class="lang_description">
+                                    <p>Native speaker</p>
+                                    <p>Full native or bilingual proficiency</p>
                                 </div>
                             </div>
                         </div>
@@ -106,8 +108,9 @@
                                 <div class="lang_icon">
                                     <img id="l_icon" src="./icons_langs/united-kingdom.png" alt="British flag">
                                 </div>
-                                <div class="lang_text">
-                                    <p>Первая проблема - если мы используем svg код, то сам код становится достаточно большим так как сама иконка может быть очень сложной по цветам и количеству вектора внутри.</p>
+                                <div class="lang_description">
+                                    <p>Full professional proficiency</p>
+                                    <p>C2 (CPE) 2015, C2 (IELTS 8.5) 2021</p>
                                 </div>
                             </div>
                         </div>
@@ -117,8 +120,9 @@
                                 <div class="lang_icon">
                                     <img id="l_icon" src="./icons_langs/france.png" alt="French flag">
                                 </div>
-                                <div>
-                                    <p>Первая проблема - если мы используем svg код, то сам код становится достаточно большим так как сама иконка</p>
+                                <div class="lang_description">
+                                    <p>Professional working proficiency</p>
+                                    <p>B2 (DELF) 2016</p>
                                 </div>
                             </div>
                         </div>
@@ -129,8 +133,9 @@
                                     <div>
                                         <img id="l_icon" src="./icons_langs/spain.png" alt="Spanish flag">
                                     </div>
-                                    <div class="lang_text">
-                                        <p>Первая проблема - если мы используем svg код, то сам код становится достаточно большим так как сама иконка может быть очень сложной по цветам и количеству вектора внутри.</p>
+                                    <div class="lang_description">
+                                        <p>Elementary Proficiency</p>
+                                        <p>A2</p>
                                     </div>
                                 </div>
                             </div>
@@ -143,21 +148,21 @@
                         <div class="progress">
                           <span class="skill">CAT Tools<i class="val">100%</i></span>
                           <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" id="n_1" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </div>
           
                         <div class="progress">
-                          <span class="skill">MT and PE<i class="val">90%</i></span>
+                          <span class="skill">Machine Translation and Post-Editing<i class="val">90%</i></span>
                           <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" id="n_2" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </div>
           
                         <div class="progress">
                           <span class="skill">Python for NLP<i class="val">75%</i></span>
                           <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" id="n_3" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </div>
                       </div>
@@ -182,13 +187,13 @@
                     <div class="resume_item">
                         <h4>2024</h4>
                         <p><em>Paris, France</em></p>
-                        <p>Description of the course</p>
+                        <p class="text-justify">A qualification course in Fullstack development (js, java, SQL/NoSQL, DevOps).</p>
                     </div>
                     <h3 class="e_item">Master of Arts in Technologies for Translation and Interpreting</h3>
                     <div class="resume_item">
                         <h4>2022 – 2023</h4>
                         <p><em>New Bulgarian University, Sofia, Bulgaria</em></p>
-                        <p>Description of the education</p>
+                        <p class="text-justify">Master's program focusing on up-to-date technologies in the field of translation and interpreting, Machine Translation, Natural language processing (NLP) and the basics of Machine Learning (ML).</p>
                     </div>
             
                 </div>
@@ -198,14 +203,14 @@
                     <div class="resume_item">
                         <h4>2021 – 2022</h4>
                         <p><em>Ghent University, Ghent, Belgium</em></p>
-                        <p>Description of the education</p>
+                        <p class="text-justify">Master's program focusing on up-to-date technologies in the field of translation and interpreting, Machine Translation, Natural language processing (NLP) and the basics of Machine Learning (ML).</p>
                     </div>
 
                     <h3 class="e_item">Specialist in Linguistics, Translation and Interpreting</h3>
                     <div class="resume_item">
                         <h4>2010 – 2015</h4>
                         <p><em>Siberian Federal University, Krasnoyarsk, Russia</em></p>
-                        <p>Description of the education</p>
+                        <p class="text-justify">5-year degree in translation and interpreting (English-Russian, French-Russian language pairs.)</p>
                     </div>
                 </div>
             </div>
@@ -229,9 +234,8 @@
                         <h4>2023 – 2024</h4>
                         <p><em>Paris, France</em></p>
                         <ul>
-                            <li>I did this</li>
-                            <li>And that</li>
-                            <li>And also that</li>
+                            <li class="text-justify">Ranking responses that were produced by an AI model.</li>
+                            <li class="text-justify">Assessing the factuality of AI model responses.</li>
                         </ul>
                     </div>
                     <h3 class="e_item">Freelance Senior Editor for Russian language</h3>
@@ -239,9 +243,9 @@
                         <h4>2022 – 2023</h4>
                         <p><em>Unbabel, Portugal</em></p>
                         <ul>
-                            <li>I did this</li>
-                            <li>And that</li>
-                            <li>And also that</li>
+                            <li class="text-justify">Annotating MT errors in accordance with the MQM framework for English-Russian machine-translated texts, conducting error analysis.</li>
+                            <li class="text-justify">Developing terminology lists and translating terminology in accordance with the customers' guidelines and requirements.</li>
+                            <li class="text-justify">Developing test suites for MT quality control for the Russian language.</li>
                         </ul>
                     </div>
             
@@ -253,20 +257,22 @@
                         <h4>2018 – 2022</h4>
                         <p><em>Abbott Laboratories, Moscow, Russia</em></p>
                         <ul>
-                            <li>I did this</li>
-                            <li>And that</li>
-                            <li>And also that</li>
+                            <li class="text-justify">Translating instructions for use, labels, manuals and internal company documentation.</li>
+                            <li class="text-justify">Localizing software for the users of Abbott products in Russia (medical devices and laboratory
+                                reagents).</li>
+                            <li class="text-justify">Managing the whole process of translation: administrating the workflow, supervising all processes.</li>
+                            <li class="text-justify">Checking and verifying the accuracy of translations.</li>
                         </ul>
                     </div>
 
                     <h3 class="e_item">Freelance translator and English tutor</h3>
-                    <div class="resume _item">
+                    <div class="resume_item">
                         <h4>2015 – 2021</h4>
                         <p><em>Freelance, Krasnoyarsk and Moscow, Russia</em></p>
                         <ul>
-                            <li>I did this</li>
-                            <li>And that</li>
-                            <li>And also that</li>
+                            <li class="text-justify">Translating texts from different fields: general domain, science, medicine, education, tourism, IT.</li>
+                            <li class="text-justify">Interpreting at medical conferences, panel discussions and educational presentations (simultaneous,
+                                consecutive and whisper interpreting).</li>
                         </ul>
                     </div>
                 </div>
@@ -326,7 +332,7 @@
                         </div>
 
                         <div class="form-group block">
-                            <textarea class="form-control" name="message" rows="12" placeholder="Message" required></textarea>
+                            <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
                         </div>
                         <div class="text-center"><button type="submit">Send Message</button></div>
                     </form>
@@ -353,8 +359,9 @@
 <!-- === End Footer === -->
 
 <!-- JS script --> 
-    <script src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="./js_files/noframework.waypoints.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
